@@ -1,1 +1,155 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suriya Dhakshinamoorthy</title>
+
+    <!-- JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Icons (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        svg: { fontCache: 'global' }
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+
+    <style>
+        :root {
+            --bg: #0d0f16;
+            --text: #d8d8d8;
+            --accent: #4cc6ff;
+            --nav-bg: #11131c;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'JetBrains Mono', monospace;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        /* Navbar */
+        nav {
+            background: var(--nav-bg);
+            padding: 18px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 850px;
+            margin: 80px auto;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: var(--accent);
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.6;
+            max-width: 700px;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            margin-top: 25px;
+        }
+
+        .social-icons a {
+            margin-right: 18px;
+            color: var(--accent);
+            font-size: 22px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #7fe1ff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 90px;
+            padding: 25px;
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div style="font-weight:600; font-size:18px; color:var(--accent);">
+            Suriya D.
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="notes.html">Notes</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Hello, I'm Suriya.</h1>
+
+        <p>
+            I am a PhD student in Mechanical Engineering at Iowa State University, 
+            focusing on computational electrohydrodynamics, Poisson–Nernst–Planck modeling, 
+            finite-element methods, high-performance computing, and scientific machine learning.
+        </p>
+
+        <p>
+            I build multiphysics models, perturbation-based approximations, and neural network surrogates.  
+            This site documents my research, notes, and technical journey.
+        </p>
+
+        <!-- SOCIAL ICONS -->
+        <div class="social-icons">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourlink" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=XYZ" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Suriya Dhakshinamoorthy — Built with JetBrains Mono + GitHub Pages
+    </footer>
+
+</body>
+</html>
