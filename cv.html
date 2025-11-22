@@ -17,6 +17,7 @@
             --text: #d8d8d8;
             --accent: #4cc6ff;
             --nav-bg: #11131c;
+            --muted: #9a9a9a;
         }
 
         body {
@@ -50,10 +51,10 @@
         }
 
         .hero {
-            max-width: 850px;
+            max-width: 900px;
             margin: 80px auto;
             text-align: left;
-            padding: 0 20px;
+            padding: 0 20px 60px 20px;
         }
 
         .hero h1 {
@@ -62,15 +63,87 @@
             color: var(--accent);
         }
 
-        .hero p {
-            font-size: 16px;
+        .hero-intro {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--muted);
+            margin-bottom: 35px;
+        }
+
+        .cv-section {
+            margin-bottom: 35px;
+        }
+
+        .cv-section h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: var(--text);
+            border-bottom: 1px solid #222;
+            padding-bottom: 6px;
+        }
+
+        .cv-section p,
+        .cv-section li {
+            font-size: 14px;
             line-height: 1.6;
-            max-width: 700px;
+        }
+
+        .cv-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .cv-item {
+            margin-bottom: 12px;
+        }
+
+        .cv-item-title {
+            font-weight: 600;
+        }
+
+        .cv-item-meta {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .tagline {
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .course-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 18px;
+            font-size: 13px;
+        }
+
+        .course-grid {
+            display: block;
+        }
+
+        .course-grid span {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+
+        .cv-note {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 6px;
+        }
+
+        .download-note {
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 10px;
         }
 
         footer {
             text-align: center;
-            margin-top: 90px;
+            margin-top: 40px;
             padding: 25px;
             font-size: 13px;
             color: #666;
@@ -95,9 +168,80 @@
 
     <section class="hero">
         <h1>Curriculum Vitae</h1>
-        <p>
-            This page is currently <strong>building</strong>.  
-        </p>
+
+        <!-- Research Interests -->
+        <div class="cv-section" id="research-interests">
+            <h2>Research Interests</h2>
+            <p>
+                Computational electrohydrodynamics, high-performance computing, numerical analysis, data-driven methods
+            </p>
+        </div>
+
+        <!-- Education -->
+        <div class="cv-section" id="education">
+            <h2>Education</h2>
+            <ul class="cv-list">
+                <li class="cv-item">
+                    <div class="cv-item-title">
+                        Ph.D., Mechanical Engineering &mdash; Iowa State University
+                    </div>
+                    <div class="cv-item-meta">
+                        Co-major: Applied Mathematics <br>
+                        2022 &ndash; Present<br>
+                    </div>
+                </li>
+                <li class="cv-item">
+                    <div class="cv-item-title">
+                        B.E., Mechanical Engineering &mdash; Anna University
+                    </div>
+                    <div class="cv-item-meta">
+                        2017 &ndash; 2021
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Skills -->
+        <div class="cv-section" id="skills">
+            <h2>Skills</h2>
+            <ul class="cv-list">
+                <li class="cv-item">
+                    <span class="cv-item-title">Sciences:</span>
+                    <span class="tagline">
+                        fluid flow, heat transfer, electrokinetics, material thermodynamics
+                    </span>
+                </li>
+                <li class="cv-item">
+                    <span class="cv-item-title">Modeling:</span>
+                    <span class="tagline">
+                        continuum models, perturbation theory, inverse problems
+                    </span>
+                </li>
+                <li class="cv-item">
+                    <span class="cv-item-title">Methods:</span>
+                    <span class="tagline">
+                        finite elements, finite volume, variational multiscale stabilization
+                    </span>
+                </li>
+                <li class="cv-item">
+                    <span class="cv-item-title">Programming:</span>
+                    <span class="tagline">
+                        C++, MPI, Python, JAX
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Relevant Coursework -->
+        <div class="cv-section" id="coursework">
+            <h2>Relevant Coursework</h2>
+            <div class="course-grid">
+                <span>MATH 5250 &mdash; Numerical Analysis of High Performance Computing</span>
+                <span>MATH 6660 &mdash; Finite Element Methods</span>
+                <span>M E 5670 &mdash; Computational Fluid Dynamics</span>
+                <span>M E 6320 &mdash; Multiphase Flow</span>
+            </div>
+        </div>
     </section>
 
     <footer>
