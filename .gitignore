@@ -1,0 +1,15 @@
+# Jekyll build folder
+_site/
+
+# Local ruby gems
+vendor/
+.bundle/
+
+# macOS junk
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Front Matter CMS internal storage (optional)
+.frontmatter/*

@@ -1,0 +1,11 @@
+title: "Suriya D Website"
+markdown: kramdown
+theme: null
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - vendor/*
+
+# Helps GitHub Pages + Bundler play nicely
+plugins: []
