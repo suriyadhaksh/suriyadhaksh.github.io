@@ -4,11 +4,82 @@ title: Research
 permalink: /research.html
 ---
 
-<section class="hero">
-    <h1>Research</h1>
+<section class="research-section">
+    <h2>Modeling &amp; Theory</h2>
 
-    <p>
-        This page is currently <strong>under construction</strong>.
-    </p>
+    <div class="research-item">
+        <p class="research-item-title">
+            Asymptotic modeling for electrochemical transport phenomena at micro-scales
+        </p>
+        <p>
+            I develop perturbation-based and multiscale approximations for Poisson–Nernst–Planck systems 
+            to understand ion transport, potential structure, and boundary-layer behavior. These models 
+            separate slow outer dynamics from fast interfacial processes, producing interpretable and 
+            efficient reduced-order descriptions.
+        </p>
+    </div>
 
+    <div class="research-item">
+        <p class="research-item-title">
+            Coupled diffuse-interface and multiphysical models ensuring energy dissipativeness
+        </p>
+        <p>
+            My work includes building thermodynamically consistent formulations—particularly 
+            Navier–Stokes–Cahn–Hilliard models—where flow, concentration, and interfaces evolve
+            together while maintaining an energy-dissipation structure. This enables stable 
+            long-time simulations of phase separation and interfacial transport.
+        </p>
+    </div>
+
+    <div class="research-item">
+        <p class="research-item-title">
+            Population balance equation modeling using cumulative distribution function representation
+        </p>
+        <p>
+            I explore CDF-based transformations of population balance equations to track particle 
+            size distributions without introducing numerical diffusion. This approach converts the 
+            PBE into a stable transport problem that preserves sharp features in evolving distributions.
+        </p>
+    </div>
+</section>
+
+<section class="research-section">
+    <h2>Numerical Methods</h2>
+
+    <div class="research-item">
+        <p class="research-item-title">
+            Linearized and semi-implicit finite element schemes for coupled Navier–Stokes–Poisson–Nernst–Planck
+        </p>
+        <p>
+            I design stable finite element strategies for tightly coupled multiphysics PDEs. 
+            My work focuses on linearization and semi-implicit time stepping that remain robust
+            at strong coupling strengths, allowing larger time steps and reducing nonlinear solver costs.
+        </p>
+    </div>
+
+    <div class="research-item">
+        <p class="research-item-title">
+            Conservative finite element schemes for three-phase Cahn–Hilliard
+        </p>
+        <p>
+            I develop mass-conserving numerical methods for ternary Cahn–Hilliard systems, ensuring 
+            accurate interface dynamics and morphology evolution in multicomponent materials.
+        </p>
+    </div>
+</section>
+
+<section class="research-section">
+    <h2>Software</h2>
+
+    <div class="research-item">
+        <p class="research-item-title">
+            Scalable multiphysics solvers on octree-based geometries
+        </p>
+        <p>
+            I build MPI-parallel, PETSc-based finite element solvers running on adaptively refined 
+            octree meshes. These tools target large-scale simulations involving fluid flow, 
+            electrochemistry, and multicomponent phase fields on complex geometries, enabling 
+            efficient parallel performance on modern HPC systems.
+        </p>
+    </div>
 </section>
