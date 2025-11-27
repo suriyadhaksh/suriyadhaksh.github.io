@@ -13,21 +13,21 @@ permalink: /research.html
         </p>
         <p>
             We develop perturbation-based linear approximations for Poisson–Nernst–Planck systems 
-            to understand boundary-layer behavior in ion transport and electric fields. These models 
-            cleanly separate diffusive, slow outer dynamics from electromigrative, fast boundary-layer 
+            to understand the extremely thin boundary-layer behavior of ion transport and electric fields near domain boundaries. 
+            These models separate slow, diffusive, outer dynamics from fast, electromigrative boundary-layer 
             processes, enabling computationally efficient reduced-order descriptions.
         </p>
     </div>
 
     <div class="research-item">
         <p class="research-item-title">
-            Coupled diffuse-interface and multiphysics models with guaranteed energy dissipation
+            Coupled diffuse-interface and multiphysics models 
         </p>
         <p>
             Our work focuses on developing a quasi-incompressible Navier–Stokes–Cahn–Hilliard system
             coupled with Poisson–Nernst–Planck equations that ensures mass conservation and strict 
-            energy dissipation. We use this continuum framework to study electrophoretic motion of cells 
-            and electromagnetic casting.
+            energy dissipation. Using this continuum framework, we aim to study electrophoretic motion of
+            cells and phase evolution in electromagnetic casting.
         </p>
     </div>
 
@@ -38,8 +38,8 @@ permalink: /research.html
         <p>
             To address the bounded particle-size domain in standard population balance equations, 
             we employ an inverse-CDF–based transformation that tracks the cumulative distribution 
-            instead of particle sizes directly. This approach converts the PBE into a stable transport 
-            problem while preserving total droplet mass in evolving distributions.
+            instead of particle sizes distribution directly. This approach converts the PBE into a
+            stable transport problem while preserving total droplet mass in evolving distributions.
         </p>
     </div>
 </section>
@@ -50,12 +50,12 @@ permalink: /research.html
 
     <div class="research-item">
         <p class="research-item-title">
-            Linearized and semi-implicit finite element schemes for coupled Navier–Stokes–Poisson–Nernst–Planck
+            Fully linearized, semi-implicit schemes for Navier–Stokes–Poisson–Nernst–Planck (NSPNP) equations
         </p>
         <p>
-            We design finite element schemes for tightly coupled multiphysics PDEs. 
-            My work focuses on linearization and semi-implicit time stepping that remain robust
-            at strong coupling strengths, allowing larger time steps and reducing nonlinear solver costs.
+            Our work focuses on developing semi-implicit finite element schemes for NS-PNP system to simulate
+            electrohydrodynamic phenomena. We aim to achieve fully linearized updates with large time steps,
+            reducing nonlinear solver costs and enabling GPU acceleration to simulate stiffer flow regimes. 
         </p>
     </div>
 
@@ -64,8 +64,8 @@ permalink: /research.html
             Conservative finite element schemes for three-phase Cahn–Hilliard
         </p>
         <p>
-            We develop mass-conserving numerical methods for ternary Cahn–Hilliard systems, ensuring 
-            accurate interface dynamics and morphology evolution in multicomponent materials.
+            We design mass-conserving and energy-stable numerical methods for ternary Cahn–Hilliard systems
+            to generate diverse material morphological data sets by varying systems' chemistry.
         </p>
     </div>
 </section>
@@ -75,12 +75,12 @@ permalink: /research.html
 
     <div class="research-item">
         <p class="research-item-title">
-            Scalable multiphysics solvers on octree-based geometries
+            Scalable multiphysics solvers on complex geometries
         </p>
         <p>
-            I build MPI-parallel, PETSc-based finite element solvers running on adaptively refined 
+            We build MPI-parallel, PETSc-based finite element solvers running on adaptively refined 
             octree meshes. These tools target large-scale simulations involving fluid flow, 
-            electrochemistry, and multicomponent phase fields on complex geometries, enabling 
+            electrochemistry, heat transfer and multicomponent phase fields on complex geometries, enabling 
             efficient parallel performance on modern HPC systems.
         </p>
     </div>
