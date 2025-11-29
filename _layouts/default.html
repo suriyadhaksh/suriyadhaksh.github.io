@@ -104,13 +104,7 @@
             font-size: 13px;
             color: #666;
         }
-
-        .hero {
-            max-width: 900px;
-            margin: 80px auto;
-            text-align: left;
-            padding: 0 20px 60px 20px;
-        }
+    
 
         .hero h1 {
             font-size: 30px;
@@ -222,6 +216,17 @@
             max-width: 750px;
         }
 
+        /* Smash section inherits research-section layout */
+        .smash-section p.smash-description {
+            max-width: 750px;   /* match other paragraph widths */
+            font-size: 14.5px;  /* match other research text */
+            line-height: 1.75;  /* match global paragraph rhythm */
+            opacity: 0.85;
+            margin-bottom: 30px;
+        }
+
+
+
         /* ============================================
         Research Overview Table
         ============================================ */
@@ -313,10 +318,12 @@
         .research-legend {
             margin-top: 12px;
             display: flex;
+            justify-content: center; 
             gap: 25px;
             font-size: 13px;
-            color: #fff;
             opacity: 0.8;
+            text-align: center;
+            margin-bottom: 14px;
         }
 
 
