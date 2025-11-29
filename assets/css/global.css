@@ -1,0 +1,47 @@
+:root {
+    --bg: #0d0f16;
+    --text: #d8d8d8;
+    --accent: #4cc6ff;
+    --nav-bg: #11131c;
+}
+
+/* Base styling */
+body {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* Navbar */
+nav {
+    background: var(--nav-bg);
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 90px;
+    padding: 25px;
+    font-size: 13px;
+    color: #666;
+}

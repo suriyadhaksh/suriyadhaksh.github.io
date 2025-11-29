@@ -1,0 +1,93 @@
+/* Research page container */
+.research-section {
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.research-section h2 {
+    font-size: 24px;
+    color: var(--accent);
+    margin-bottom: 22px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 6px;
+}
+
+/* Individual item */
+.research-item {
+    margin-bottom: 32px;
+}
+
+/* Research item title */
+.research-item-title {
+    font-size: 19px !important;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 6px;
+    letter-spacing: 0.2px;
+}
+
+/* Research paragraphs */
+.research-item p {
+    font-size: 14.5px;
+    line-height: 1.75;
+    color: var(--text);
+    opacity: 0.85;
+    max-width: 750px;
+}
+
+/* Smash framework paragraph */
+.smash-section p.smash-description {
+    max-width: 750px;
+    font-size: 14.5px;
+    line-height: 1.75;
+    opacity: 0.85;
+    margin-bottom: 30px;
+}
+
+/* -------- Research Tabs -------- */
+.research-tabs {
+    max-width: 750px;              /* Match research-section width */
+    margin: 60px auto 40px;        /* Same top/bottom spacing */
+    padding: -5px 20px;               /* Same left/right padding */
+    
+    display: flex;
+    gap: 22px;
+    
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    font-family: inherit;          /* Use site font */
+    font-size: 16px;
+    font-weight: 500;              /* Slightly stronger for tab look */
+    color: var(--text);
+    
+    padding: 6px 4px;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.tab-button:hover {
+    opacity: 1;
+}
+
+.tab-button.active {
+    border-bottom: 2px solid var(--accent);
+    color: var(--accent);
+    opacity: 1;
+}
+
+/* Tab content containers */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}

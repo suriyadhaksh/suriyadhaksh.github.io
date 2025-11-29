@@ -1,0 +1,29 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }}</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        svg: { fontCache: 'global' }
+      };
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+    <!-- Modular CSS (all combined through includes) -->
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/hero.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/cv.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/table.css' | relative_url }}">
+</head>

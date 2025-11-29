@@ -4,196 +4,215 @@ title: Research
 permalink: /research.html
 ---
 
+<div class="research-tabs">
+    <button class="tab-button active" data-tab="technical">Technical</button>
+    <button class="tab-button" data-tab="broader">Broader Questions</button>
+</div>
 
-<section class="research-section smash-section">
-    <h2>Broader research questions</h2>
+<div id="technical" class="tab-content active">
 
-    <p class="smash-description">
-        We use the Smash framework (Science–Modeling–Algorithm–Software–Hardware), 
-        adapted from the RIKEN Center for Computational Science, which provides a 
-        structured way to classify computational mechanics research. It helps 
-        characterize work based on scientific motivation, model formulation, 
-        numerical algorithm development, software engineering, and hardware design.
-    </p>
-</section>
+    <section class="research-section">
+        <h2>Modeling &amp; Theory</h2>
+
+        <div class="research-item">
+            <p class="research-item-title">
+                Asymptotic modeling of electrochemical transport 
+            </p>
+            <p>
+                We develop perturbation-based linear approximations for Poisson–Nernst–Planck systems 
+                to understand the extremely thin boundary-layer behavior of ion transport and electric fields near domain boundaries. 
+                These models separate slow, diffusive, outer dynamics from fast, electromigrative boundary-layer 
+                processes, enabling computationally efficient reduced-order descriptions.
+            </p>
+        </div>
+
+        <div class="research-item">
+            <p class="research-item-title">
+                Coupled diffuse-interface and multiphysics models 
+            </p>
+            <p>
+                Our work focuses on developing a quasi-incompressible Navier–Stokes–Cahn–Hilliard system
+                coupled with Poisson–Nernst–Planck equations that ensures mass conservation and strict 
+                energy dissipation. Using this continuum framework, we aim to study electrophoretic motion of
+                cells and phase evolution in electromagnetic casting.
+            </p>
+        </div>
+
+        <div class="research-item">
+            <p class="research-item-title">
+                Inverse Cumulative Distribution Formulation (iCDF) for population balance equations
+            </p>
+            <p>
+                To address the bounded particle-size domain in standard population balance equations, 
+                we employ an inverse-CDF–based transformation that tracks the cumulative distribution 
+                instead of particle sizes distribution directly. This approach converts the PBE into a
+                stable transport problem while preserving total droplet mass in evolving distributions.
+            </p>
+        </div>
+    </section>
 
 
-<!-- ============================
-     Broader Research Questions Table
-     ============================ -->
+    <section class="research-section">
+        <h2>Numerical Methods</h2>
 
-<section class="research-overview">
+        <div class="research-item">
+            <p class="research-item-title">
+                Fully linearized schemes for Navier–Stokes–Poisson–Nernst–Planck equations
+            </p>
+            <p>
+                Our work focuses on developing semi-implicit finite element schemes for NS-PNP system to simulate
+                electrohydrodynamic phenomena. We aim to achieve fully linearized updates with large time steps,
+                reducing nonlinear solver costs and enabling GPU acceleration to simulate stiffer flow regimes. 
+            </p>
+        </div>
 
-    <!-- Legend -->
-    <div class="research-legend">
-        <div><span class="blue-dot legend-dot"></span> Our contribution</div>
-        <div><span class="grey-dot legend-dot"></span> Existing/collaborators’ work</div>
-    </div>
+        <div class="research-item">
+            <p class="research-item-title">
+                Conservative finite element schemes for three-phase Cahn–Hilliard system
+            </p>
+            <p>
+                We design mass-conserving and energy-stable numerical methods for ternary Cahn–Hilliard systems
+                to generate diverse material morphological data sets for various systems' chemistry.
+            </p>
+        </div>
+    </section>
 
-    <div class="research-table-wrapper">
-        <table class="research-table">
-            <thead>
-                <tr>
-                    <th>Broader research question</th>
-                    <th>Science</th>
-                    <th>Modeling</th>
-                    <th>Algorithm</th>
-                    <th>Software</th>
-                    <th>Hardware</th>
-                </tr>
-            </thead>
+    <section class="research-section">
+        <h2>Software</h2>
 
-            <tbody>
+        <div class="research-item">
+            <p class="research-item-title">
+                Scalable multiphysics solvers on complex geometries
+            </p>
+            <p>
+                We build MPI-parallel, PETSc-based finite element solvers running on adaptively refined 
+                octree meshes. These tools target large-scale simulations involving fluid flow, 
+                electrochemistry, heat transfer and multicomponent phase fields on complex geometries, enabling 
+                efficient parallel performance on modern HPC systems.
+            </p>
+        </div>
+    </section>
 
-                <!-- Row 1 -->
-                <tr>
-                    <td> <span class="grey-text">Can we design a wearable dialysis device?</span></td>
+</div>
 
-                    <td> <span class="grey-text">Can we describe the electrohydrodynamics of the device using a computational framework to predict device efficiency, power consumption, and heat generation for design and analysis?</span></td>
+<div id="broader" class="tab-content">
 
-                    <td>
-                        <span class="blue-text">Can we represent the device’s complex geometry using an Octree mesh? If yes, what is the error tolerance?</span><br><br>
-                        <span class="blue-text">Can we simplify the device’s complicated physics using approximate boundary conditions?</span>
-                    </td>
 
-                    <td>
-                        <span class="blue-text">Can we design numerical schemes suitable for HPC and GPU computing?</span>  
-                    </td>
+    <section class="research-section smash-section">
+        <h2>Broader research questions</h2>
 
-                    <td>
-                        <span class="blue-text">Can we develop computer codes for parallel and scalable HPC implementations?</span>  
-                    </td>
+        <p class="smash-description">
+            We use the Smash framework (Science–Modeling–Algorithm–Software–Hardware), 
+            adapted from the RIKEN Center for Computational Science, which provides a 
+            structured way to classify computational mechanics research. It helps 
+            characterize work based on scientific motivation, model formulation, 
+            numerical algorithm development, software engineering, and hardware design.
+        </p>
+    </section>
 
-                    <td> <span class="grey-text">We don’t work on this</span></td>
-                </tr>
 
-                <!-- Row 2 -->
-                <tr>
-                    <td> <span class="grey-text">Can we design efficient organic photovoltaic cells?</span></td>
-
-                    <td> <span class="grey-text">Can we describe the three-component material synthesis process using a computational framework to map the relationship between material chemistry and cell morphology?</span></td>
-
-                    <td>
-                        <span class="blue-text">Can we describe the system’s material thermodynamics using a high-fidelity continuum framework?</span><br><br>
-                        <span class="blue-text">Can we create a computationally efficient map between chemistry and morphology using Bayesian optimization?</span> 
-                    </td>
-
-                    <td>
-                        <span class="blue-text">Can we design numerical schemes that preserve mass conservation and energy dissipation?</span>  
-                    </td>
-
-                    <td>
-                        
-                    </td>
-
-                    <td></td>
-                </tr>
-
-                <!-- Row 3 -->
-                <tr>
-                    <td> <span class="grey-text">Can we propose seating arrangements in school classrooms to reduce airborne bacterial infection spread?</span></td>
-
-                    <td> <span class="grey-text"> Can we model droplet transfer in a classroom for a given seating arrangement and ventilation using a computational framework?</span></td>
-
-                    <td>
-                        <span class="blue-text">Can we develop new transformations of the population balance equation to address the boundedness of the particle-size domain? </span> 
-                    </td>
-
-                    <td>
-                        <span class="blue-text">Can we design numerical schemes that preserve positivity of the solution field?</span>  
     
-                    </td>
+    <!-- ============================
+        Broader Research Questions Table
+        ============================ -->
 
-                    <td></td>
-                    <td></td>
-                </tr>
+    <section class="research-overview">
 
-            </tbody>
-        </table>
+        <!-- Legend -->
+        <div class="research-legend">
+            <div><span class="blue-dot legend-dot"></span> Our contribution</div>
+            <div><span class="grey-dot legend-dot"></span> Existing/collaborators’ work</div>
+        </div>
 
+        <div class="research-table-wrapper">
+            <table class="research-table">
+                <thead>
+                    <tr>
+                        <th>Broader research question</th>
+                        <th>Science</th>
+                        <th>Modeling</th>
+                        <th>Algorithm</th>
+                        <th>Software</th>
+                        <th>Hardware</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- Row 1 -->
+                    <tr>
+                        <td> <span class="grey-text">Can we design a wearable dialysis device?</span></td>
+
+                        <td> <span class="grey-text">Can we describe the electrohydrodynamics of the device using a computational framework to predict device efficiency, power consumption, and heat generation for design and analysis?</span></td>
+
+                        <td>
+                            <span class="blue-text">Can we represent the device’s complex geometry using an Octree mesh? If yes, what is the error tolerance?</span><br><br>
+                            <span class="blue-text">Can we simplify the device’s complicated physics using approximate boundary conditions?</span>
+                        </td>
+
+                        <td>
+                            <span class="blue-text">Can we design numerical schemes suitable for HPC and GPU computing?</span>  
+                        </td>
+
+                        <td>
+                            <span class="blue-text">Can we develop computer codes for parallel and scalable HPC implementations?</span>  
+                        </td>
+
+                        <td> <span class="grey-text">We don’t work on this</span></td>
+                    </tr>
+
+                    <!-- Row 2 -->
+                    <tr>
+                        <td> <span class="grey-text">Can we design efficient organic photovoltaic cells?</span></td>
+
+                        <td> <span class="grey-text">Can we describe the three-component material synthesis process using a computational framework to map the relationship between material chemistry and cell morphology?</span></td>
+
+                        <td>
+                            <span class="blue-text">Can we describe the system’s material thermodynamics using a high-fidelity continuum framework?</span><br><br>
+                            <span class="blue-text">Can we create a computationally efficient map between chemistry and morphology using Bayesian optimization?</span> 
+                        </td>
+
+                        <td>
+                            <span class="blue-text">Can we design numerical schemes that preserve mass conservation and energy dissipation?</span>  
+                        </td>
+
+                        <td>
+                            
+                        </td>
+
+                        <td></td>
+                    </tr>
+
+                    <!-- Row 3 -->
+                    <tr>
+                        <td> <span class="grey-text">Can we propose seating arrangements in school classrooms to reduce airborne bacterial infection spread?</span></td>
+
+                        <td> <span class="grey-text"> Can we model droplet transfer in a classroom for a given seating arrangement and ventilation using a computational framework?</span></td>
+
+                        <td>
+                            <span class="blue-text">Can we develop new transformations of the population balance equation to address the boundedness of the particle-size domain? </span> 
+                        </td>
+
+                        <td>
+                            <span class="blue-text">Can we design numerical schemes that preserve positivity of the solution field?</span>  
         
-    </div>
-</section>
+                        </td>
+
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            
+        </div>
+    </section>
+    
+</div>
 
 
-<section class="research-section">
-    <h2>Modeling &amp; Theory</h2>
-
-    <div class="research-item">
-        <p class="research-item-title">
-            Asymptotic modeling of electrochemical transport 
-        </p>
-        <p>
-            We develop perturbation-based linear approximations for Poisson–Nernst–Planck systems 
-            to understand the extremely thin boundary-layer behavior of ion transport and electric fields near domain boundaries. 
-            These models separate slow, diffusive, outer dynamics from fast, electromigrative boundary-layer 
-            processes, enabling computationally efficient reduced-order descriptions.
-        </p>
-    </div>
-
-    <div class="research-item">
-        <p class="research-item-title">
-            Coupled diffuse-interface and multiphysics models 
-        </p>
-        <p>
-            Our work focuses on developing a quasi-incompressible Navier–Stokes–Cahn–Hilliard system
-            coupled with Poisson–Nernst–Planck equations that ensures mass conservation and strict 
-            energy dissipation. Using this continuum framework, we aim to study electrophoretic motion of
-            cells and phase evolution in electromagnetic casting.
-        </p>
-    </div>
-
-    <div class="research-item">
-        <p class="research-item-title">
-            Inverse Cumulative Distribution Formulation (iCDF) for population balance equations
-        </p>
-        <p>
-            To address the bounded particle-size domain in standard population balance equations, 
-            we employ an inverse-CDF–based transformation that tracks the cumulative distribution 
-            instead of particle sizes distribution directly. This approach converts the PBE into a
-            stable transport problem while preserving total droplet mass in evolving distributions.
-        </p>
-    </div>
-</section>
 
 
-<section class="research-section">
-    <h2>Numerical Methods</h2>
 
-    <div class="research-item">
-        <p class="research-item-title">
-            Fully linearized schemes for Navier–Stokes–Poisson–Nernst–Planck equations
-        </p>
-        <p>
-            Our work focuses on developing semi-implicit finite element schemes for NS-PNP system to simulate
-            electrohydrodynamic phenomena. We aim to achieve fully linearized updates with large time steps,
-            reducing nonlinear solver costs and enabling GPU acceleration to simulate stiffer flow regimes. 
-        </p>
-    </div>
 
-    <div class="research-item">
-        <p class="research-item-title">
-            Conservative finite element schemes for three-phase Cahn–Hilliard system
-        </p>
-        <p>
-            We design mass-conserving and energy-stable numerical methods for ternary Cahn–Hilliard systems
-            to generate diverse material morphological data sets for various systems' chemistry.
-        </p>
-    </div>
-</section>
-
-<section class="research-section">
-    <h2>Software</h2>
-
-    <div class="research-item">
-        <p class="research-item-title">
-            Scalable multiphysics solvers on complex geometries
-        </p>
-        <p>
-            We build MPI-parallel, PETSc-based finite element solvers running on adaptively refined 
-            octree meshes. These tools target large-scale simulations involving fluid flow, 
-            electrochemistry, heat transfer and multicomponent phase fields on complex geometries, enabling 
-            efficient parallel performance on modern HPC systems.
-        </p>
-    </div>
-</section>
