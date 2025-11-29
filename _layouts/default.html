@@ -180,7 +180,7 @@
         ------------------------------ */
 
         .research-section {
-            max-width: 900px;
+            max-width: 750px;
             margin: 60px auto;
             padding: 0 20px;
         }
@@ -231,46 +231,39 @@
         Research Overview Table
         ============================================ */
 
+        /* Match table width to research-item paragraph width (750px) */
         .research-overview {
-            max-width: 1100px;
+            max-width: 750px;   /* same as .research-item p */
             margin: 40px auto 70px auto;
             padding: 0 20px;
         }
 
-        .research-overview h2 {
-            font-size: 24px;
-            color: var(--accent);
-            margin-bottom: 22px;
-            border-bottom: 1px solid #222;
-            padding-bottom: 6px;
-        }
-
-        /* Wrapper for horizontal scroll on mobile */
-        .research-table-wrapper {
-            overflow-x: auto;
-        }
-
+        /* Compact table to fit nicely within 750px */
         .research-table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 14px;
+            font-size: 13px;
             color: var(--text);
         }
 
-        .research-table th, .research-table td {
+        .research-table th,
+        .research-table td {
             border: 1px solid #333;
-            padding: 12px 14px;
+            padding: 10px 12px;
             text-align: left;
             vertical-align: top;
             line-height: 1.55;
+            white-space: normal;
         }
 
         .research-table th {
             background: #111;
             color: var(--accent);
             font-weight: 600;
-            font-size: 15px;
+            font-size: 14px;
         }
+
+
 
         /* Colored dots */
         .blue-dot {
