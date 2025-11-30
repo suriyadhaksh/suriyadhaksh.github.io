@@ -1,59 +1,76 @@
+/* CV wrapper — match width/margins to research page */
 .cv-wrapper {
-    max-width: 850px;
-    margin: 40px auto;
+    max-width: 750px;              /* same as research-section */
+    margin: 60px auto;             /* same top/bottom margin */
     padding: 0 20px;
 }
 
-
+/* Section headers — match research h2 style */
 .cv-section {
-    margin-bottom: 35px;
+    margin-bottom: 32px;           /* consistent with .research-item spacing */
 }
 
 .cv-section h2 {
-    font-size: 18px;
-    margin-bottom: 12px;
-    color: var(--text);
+    font-size: 24px;               /* match research-section h2 */
+    color: var(--accent);          /* consistent accent color */
+    margin-bottom: 22px;           /* same spacing as research h2 */
     border-bottom: 1px solid #222;
     padding-bottom: 6px;
 }
 
+/* Paragraphs and list items — match research-item p */
 .cv-section p,
 .cv-section li {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 14.5px;             /* match research text */
+    line-height: 1.75;
+    color: var(--text);
+    opacity: 0.85;                 /* softer tone like research page */
+    margin-bottom: 6px;            /* consistent spacing */
 }
 
+/* List styling */
 .cv-list {
     list-style: none;
     padding-left: 0;
     margin: 0;
 }
 
+/* Individual CV entries */
 .cv-item {
-    margin-bottom: 12px;
+    margin-bottom: 22px;           /* cleaner, more consistent spacing */
 }
 
 .cv-item-title {
+    font-size: 19px;               /* match research-item-title */
     font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+    letter-spacing: 0.2px;
 }
 
 .cv-item-meta {
-    font-size: 13px;
+    font-size: 13.5px;             /* slightly larger, readable */
     color: var(--muted);
+    margin-bottom: 6px;
 }
 
+/* Tagline under job titles */
 .tagline {
-    font-size: 14px;
+    font-size: 14.5px;
+    line-height: 1.6;
+    opacity: 0.85;
     margin-top: 4px;
 }
 
-/* Coursework grid */
+/* Coursework grid — make consistent font + spacing */
 .course-grid {
     display: block;
 }
 
 .course-grid span {
     display: block;
-    font-size: 14px;
+    font-size: 14.5px;             /* match research paragraph font size */
+    line-height: 1.75;
+    opacity: 0.85;
     margin-bottom: 6px;
 }
